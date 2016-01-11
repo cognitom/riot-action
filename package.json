@@ -1,6 +1,6 @@
 {
   "name": "riot-action",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Logic separation for Riot.js",
   "main": "dist/commonjs.js",
   "jsnext:main": "index.js",
