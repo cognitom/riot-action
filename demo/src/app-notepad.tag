@@ -1,6 +1,6 @@
 <app-notepad>
   <textarea onchange={ change }>{ message || '' }</textarea>
-  <button onclick={ click }>Clear</button>
+  <button onclick={ click }>+</button>
   <p if={ error }>{ error }</p>
 
   <script>
@@ -10,7 +10,7 @@
       this.trigger('save', this.message = e.target.value)
     }
     this.click = (e) => {
-      this.trigger('clear')
+      this.trigger('add')
     }
   </script>
 </app-notepad>
