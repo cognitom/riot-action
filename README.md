@@ -10,7 +10,7 @@ Write the view and apply the mixin `riot-action`:
 
 ```html
 <memo>
-  <input type="text" value={ message || '' }>
+  <input type="text" value={ message || '' } onchange={ change }>
   <button onclick={ click }>Clear</button>
 
   <script>
