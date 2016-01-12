@@ -62,3 +62,11 @@ import Memo from './action-memo'
   </script>
 </app>
 ```
+
+## Flow
+
+- Events: the view use `this.trigger()` to tell something to the action
+- Actions: do something in the action
+- Updates: the action use `this.update()` to tell something to the view
+
+`Action` class has `update()` method and it's the only way to control the view.
