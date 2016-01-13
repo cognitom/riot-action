@@ -52,6 +52,16 @@ export default class $ extends Action {
 
 Combine the view and the logic:
 
+```js
+import riot from 'riot'
+import Memo from './action-memo'
+import './memo.tag'
+
+riot.mount('memo', { action: Memo })
+```
+
+Or:
+
 ```html
 import Memo from './action-memo'
 
@@ -62,6 +72,8 @@ import Memo from './action-memo'
   </script>
 </app>
 ```
+
+In both cases, the Action is passed by its attributes.
 
 ## Flow
 
