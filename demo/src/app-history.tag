@@ -6,8 +6,6 @@
   <button onclick={ click }>Clear</button>
 
   <script>
-    this.mixin('riot-action') // load mixin
-
     this.click = e => {
       this.trigger('clear')
     }

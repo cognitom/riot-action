@@ -4,8 +4,6 @@
   <p if={ error }>{ error }</p>
 
   <script>
-    this.mixin('riot-action') // load mixin
-
     this.change = e => {
       this.trigger('save', this.message = e.target.value)
     }

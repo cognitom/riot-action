@@ -7,8 +7,6 @@
   </select>
 
   <script>
-    this.mixin('riot-action') // load mixin
-
     this.change = e => {
       this.trigger('change', this.theme = e.target.value)
     }
