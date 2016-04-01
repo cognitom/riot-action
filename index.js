@@ -1,9 +1,6 @@
-import riot from 'riot'
 import mixin from './lib/mixin'
 import Action from './lib/action'
+import view from './lib/view'
 
-// Register shared mixin
-riot.mixin('riot-action', mixin)
-
-export { util } from './lib/util'
+export { view, mixin }
 export default Action
